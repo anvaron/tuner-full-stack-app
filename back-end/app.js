@@ -12,6 +12,7 @@ app.use("/songs", songsController);
 app.get("/", (req, res) => {
   res.send("Welcome to Tuner");
 })
+
 app.get("*", (req, res) => {
   res.status(404).send("There's no .... for you, here!")
 })

@@ -1,9 +1,10 @@
 const db = require("../db/dbConfig")
 
+  // 
   const getAllSongs = async () => {
     try {
-      const allSongs = await db.any('SELECT * FROM songs;');
-      return allSongs;
+      const query = await db.any('SELECT * FROM songs;');
+      return query;
     } catch (error) {
       return error;
     }
@@ -11,7 +12,7 @@ const db = require("../db/dbConfig")
 
   const getSong = async () => {
     try {
-
+      
     } catch (error) {
       return error;
     }
@@ -32,7 +33,7 @@ const db = require("../db/dbConfig")
       return error;
     }  
   }
-  
+
   const updateSong = async () => {
     try {
 
