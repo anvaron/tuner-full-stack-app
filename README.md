@@ -26,7 +26,7 @@ If you finish ahead of time you can try the bonus challenges in each section, or
 
 If you feel like you are falling behind, reach out to an instructor.
 
-## Part 1
+## Part 1 [ok]
 
 - Get a basic express app working
 
@@ -48,13 +48,13 @@ Add a `seed.sql` file that will insert a few songs into your database
 
 Don't forget to update your environmental variables to that you can connect to your Postgres database.
 
-- [ok] create a route `/` that says something like `Welcome to Tuner`
+- create a route `/` that says something like `Welcome to Tuner`
 - create a route `/songs` that shows the array of songs you've created
 - create a 404 route that when a user tries to access a route that doesn't exist, they will see this page
 
 **Note** the original `/songs` route should be unaffected by these additions
 
-### Bonus
+### Bonus [ok]
 
 Typing `"psql -U postgres -f db/schema.sql"` and `"psql -U postgres -f db/seed.sql"` is a bit annoying and you probably have to look it up every time.
 
