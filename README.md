@@ -60,7 +60,7 @@ Typing `"psql -U postgres -f db/schema.sql"` and `"psql -U postgres -f db/seed.s
 
 Research how to upgrade your `package.json` and add two scripts one called `dbinit` to run the first command and `dbseed` to run the second command. Then run them using `npm run dbinit` and `npm run dbseed`
 
-## Part 2
+## Part 2 []
 
 Do not start Part 2 until your previous routes work as expected. If you are stuck, be sure to ask for help.
 
