@@ -1,7 +1,8 @@
-const express = require("express");
 // 
+const express = require("express");
 const songs = express.Router();
 
+//
 const db = require("../db/dbConfig");
 const { checkSong, checkBoolean, checkArtist } = require("../validations/checkData")
 const { getAllSongs, getSong, createSong, deleteSong, updateSong } = require("../queries/songs");
@@ -49,7 +50,7 @@ songs.post("/",
   }
 );
 
-// DELETE:
+// DELETE: deletes a song by id
 songs.delete('/:id', async (req, res) => {
   const { id } = req.params
   const data = await deleteSong(id);
@@ -60,7 +61,7 @@ songs.delete('/:id', async (req, res) => {
   }   
 });
 
-// UPDATE
+// UPDATE: Updates a song by id
 songs.put('/:id', async (req, res) => {
   const { id } = req.params;
   const data = await updateSong(req.body, id);
